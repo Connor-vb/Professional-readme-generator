@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "professional-readme-generator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Connor-vb/Professional-readme-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Connor-vb/Professional-readme-generator/issues"
+  },
+  "homepage": "https://github.com/Connor-vb/Professional-readme-generator#readme"
+}
