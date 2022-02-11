@@ -18,7 +18,7 @@ inquirer.prompt([
         message: 'What is your GitHub username?'
     },
     {
-        type: 'input',
+        type: 'List',
         name: 'License',
         message: 'Choose a license (if applicable)',
         choices: ["MIT", "Apache", "Mozilla", "No License"]
@@ -42,4 +42,29 @@ inquirer.prompt([
         default: 'N/A'
     }
 ])
+    .then(data => {
+        fs.writeFileSync("./Dist/README.md", `
+# ${data.title}
 
+## Description
+${data.Description}
+
+## GitHub
+${data.GitHub}
+
+## License
+${data.License}
+
+## Dependencies
+${data.Dependencies}
+
+## Contributions
+${data.Contributions}
+
+## Deployed Links
+
+
+## Init
+${data.Init}
+        `)
+    })
